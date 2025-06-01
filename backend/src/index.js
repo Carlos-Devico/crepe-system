@@ -7,7 +7,7 @@ const app = express();
 
 app.use(cors());// libera acesso para todas as origens — para desenvolvimento está ok
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3002;
 
 app.use(express.json());
 
