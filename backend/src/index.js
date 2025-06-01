@@ -1,8 +1,12 @@
 import express from "express";
 import produtosRoutes from "./routes/produtos.js";
+import cors from 'cors';
 
 
 const app = express();
+
+app.use(cors());// libera acesso para todas as origens — para desenvolvimento está ok
+
 const PORT = process.env.PORT || 3001;
 
 app.use(express.json());
